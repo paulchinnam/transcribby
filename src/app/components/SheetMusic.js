@@ -54,8 +54,9 @@ function SheetMusic({ notes }) {
   useEffect(() => {
     if (!notes.length) return;
 
-    const abcNotation = generateABCFromMIDI(notes);
-    const abcString = `X:1\nT:Your Song Title\nM:4/4\nL:1/8\nK:C\n${abcNotation}`;
+    //const abcNotation = generateABCFromMIDI(notes);
+    const HARDabcNotation = "[F5A5C6E6'] | [C5E5G5C6'] | [G4E5A5C6'] | [E5G5B5D6'] |"
+    const abcString = `X:1\nT:Your Song Title\nM:4/4\nL:1/8\nK:C\n${HARDabcNotation}`;
 
     console.log(abcString);
 
